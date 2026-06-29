@@ -9,7 +9,9 @@ public class Problema1_Inventario {
     private Problema1_Armadura armadura;
 
     public void equipar(Problema1_Arma arma) { this.arma = arma; }
-    public void equipar(Problema1_Armadura armadura) { this.armadura = armadura;  }  
+    public void equipar(Problema1_Armadura armadura) { this.armadura = armadura;  }
+    
+    
     public int getBonoAtaque() { return (arma != null) ? arma.getModificador() : 0; }
     public int getBonoDefensa() { return (armadura != null) ? armadura.getModificador() : 0; }
 }
